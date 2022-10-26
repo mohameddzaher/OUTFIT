@@ -1,0 +1,31 @@
+.stay-home {
+    margin-top: 107px;
+    width: 100%;
+    text-align: center;
+    background-image: url(../images/b1.jpg);
+    height: 35vh;
+    color: white;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.stay-home h2, .stay-home p {
+    color: #fff;
+    letter-spacing: 1px;
+}
+
+.stay-home h2 {
+    font-size: 45px;
+    
+}
+
+.products-all h4 {
+    margin-top: 40px;
+}
+
+.products {
+    margin-top: 40px;
+}

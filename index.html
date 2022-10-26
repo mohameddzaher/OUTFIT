@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OUTFIT</title>
+
+    <!-- Links -->
+    <link rel="stylesheet" href="css/main.css">
+
+    <!-- Connect Google Icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+
+    <!-- connect animate css -->
+    <link
+    rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+    <!-- bootstrap link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+
+    <!-- Connect Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600;700;800&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+    <header>
+        <div class="free-delivery">
+            <h6>FREE PHOTO SESSION FOR ORDERS OVER 3 PIECES.</h6>
+            <div class="icons">
+                <a href="https://www.facebook.com/mohamed.zaher.589100/" target="_blank"><span class='bi bi-facebook'></span></a>
+                <a href="https://www.instagram.com/mohamedd.zaher/" target="_blank"><span class='bi bi-instagram'></span></a>
+                <a href="#"><span class='bi bi-tiktok'></span></a>
+            </div>
+        </div>
+        <div class="main-head">
+            <div class="left-section">
+                <p>OUTFIT</p>
+            </div>
+            <nav class="middle-section">
+                <ul class="hh">
+                    <li><a class="active" href="index.html">Home</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="#men">Men</a></li>
+                    <li><a href="#women">Women</a></li>
+                    <li><a href="#about">About us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="right-section">
+                <div class="fav">
+                    <button id="favourite-button"><a href="#"><i class="bi bi-heart"></i></a></button>
+                    <label for="favourite-button">Favourite</label>
+                </div>
+                <div class="cart">
+                    
+                    <button id="cart-button"><a href="#" class="test"><i class="bi bi-bag blue-color"></i></a></button>
+                    <label for="cart-button">Shopping Cart</label>
+                </div>
+                <div class="log">
+                    <button><a href="#"><i class='bi bi-person'></i></a></button>
+                </div>
+                
+            </div>
+        </div>
+    </header>
+
+    <section class="bg">
+        <h3>#Save 70% Off</h3>
+        <p> with Summer Collections .</p>
+    </section>
+    <center>
+        <section class="enjoy">
+            <div class="enjoy-text">
+                <p>Enjoy Your Shopping Journy With Big Offers <br> Don't Miss It. <a href="#shop">Shop Now</a> </p>
+            </div>
+            <div class="search">
+                <i class="bi bi-search"></i>
+                <input autocomplete="off" type="text" placeholder="What are you looking for?" value="">
+            </div>
+        </section>
+    </center>
+
+    <section class="scroll-all">
+        <div class="scroll">
+
+        </div>
+    </section>
+
+    <section class="products-all" id="shop">
+        <h4>OUR PRODUCTS</h4>
+        <section class="products">
+            
+        </section>
+        <div class="see-more">
+            <button onclick="location.href='shop.html'" class="see-more-products">See More Products</button>
+        </div>
+    </section> 
+    
+    <hr>
+    
+    <section class="all-services" id="serv">
+        <h4>OUR SERVICES</h4>
+        <section class="services" >
+            <div class="delivery">
+                <img src="images/delivery.jpg" alt="">
+                <div class="txtt">
+                    <h3>Free Delivery</h3>
+                    <p>Free delivery for orders <br> over 750 LE .</p>
+                </div>
+            </div>
+            <div class="photosession">
+                <img src="images/photography.jpg" alt="">
+                <div class="txtt">
+                    <h3>Free Photo Session</h3>
+                    <p>Free photo session for orders <br> over 3 pieces .</p>
+                </div>
+            </div>
+            <div class="pay-home">
+                <img src="images/payyyy.jpg" alt="An Image">
+                <div class="txtt">
+                    <h3>Cash On Delivery</h3>
+                    <p>You can pay when the order <br> is delivered to you .</p>
+                </div>
+            </div>
+            <div class="replace">
+                <img src="images/replace.jpg" alt="An Image">
+                <div class="txtt">
+                    <h3>Product Replacement</h3>
+                    <p>You can exchange the product while <br> you receive it .</p>
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <section class="about">
+        <h4>OUTFIT</h4>
+        <p>Take a look at our journy, you can also ask us any question you like. <br> We are waiting for you bruh .</p>
+        <button>About Us</button>
+    </section>
+
+    <section class="newsletter">
+        <img src="images/undraw_Newsletter_re_wrob.png" alt="">
+        <h3>Subscribe To Our Newsletter</h3>
+        <p>Our weekly newsletter provides you with the latest and most important happenings in the industry .</p>
+        <div class="form-control">
+            <input type="email" class="input" placeholder="Enter email address">
+            <button class="btn">Subscribe</button>
+        </div>
+    </section>
+
+    <hr>
+
+    <section class="form">
+        <h3>Stay In Touch</h3>
+        <p>You can contact us to fill out this form or send us an email at <span>Contact@outfit.com</span> </p>
+        <form action="">
+            <input type="text" id="first-name" placeholder="Your First Name">
+            <input type="text" id="second-name" placeholder="Your Last Name">
+            <input type="email" id="email" placeholder="Your e-mail address">
+            <input type="tel" id="phone" placeholder="Your Phone Number">
+            <input type="text" id="message" placeholder="Enter Your Message">
+            <div class="form-button">
+                <button id="form-btn" type="submit">Send</button>
+            </div>
+        </form>
+    </section>
+
+    <footer>
+        <section class="footer-lists">
+            <div class="first-sec">
+                <h5>Shop</h5>
+                <ul>
+                    <a href=""><li>Women</li></a>
+                    <a href=""><li>Men</li></a>
+                    <a href=""><li>Sale</li></a>
+                    <a href=""><li>Home</li></a>
+                    <a href=""><li>About us</li></a>
+                </ul>
+            </div>
+            <div class="second-sec">
+                <h5>Contact</h5>
+                <ul>
+                    <a href=""><li>Contact form</li></a>
+                    <a href=""><li>Customer service</li></a>
+                    <a href=""><li>What's App +201066087981</li></a>
+                </ul>
+            </div>
+            <div class="third-sec">
+                <h5>Help</h5>
+                <ul>
+                    <a href=""><li>Frequently Asked Questions</li></a>
+                    <a href=""><li>Return And Changes</li></a>
+                    <a href=""><li>How to shop on Outfit ?</li></a>
+                </ul>
+            </div>
+            <div class="fourth-sec">
+                <h5>Social Media</h5>
+                <ul>
+                    <a href=""><li>Instagram</li></a>
+                    <a href=""><li>Facebook</li></a>
+                    <a href=""><li>Tik Tok</li></a>
+                </ul>
+            </div>
+        </section>
+        <div class="final">
+            <h4>Quick Call </h4>
+            <p>+201066087981 <br> We Are Available 24 Hours ( including Public holidays ) . </p>
+            <div class="icons">
+                <a href="https://www.facebook.com/mohamed.zaher.589100/" target="_blank"><span class='bi bi-facebook'></span></a>
+                <a href="https://www.instagram.com/mohamedd.zaher/" target="_blank"><span class='bi bi-instagram'></span></a>
+                <a href="#"><span class='bi bi-tiktok'></span></a>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="js/wow.min.js"></script>
+    <script src="js/main.js"></script>
+    
+</body>
+</html>

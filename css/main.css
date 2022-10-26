@@ -1,0 +1,692 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: auto;
+}
+
+:root {
+    --main-color: #232831;
+    --red-color: #F47C7C;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: var(--main-color);
+}
+
+li {
+    list-style: none;
+}
+
+hr{
+    border: 0.1 solid rgba(190, 190, 190, 0.024);
+    width: 70%;
+    margin: 80px auto 20px auto;
+}
+
+/***************** Start Coding One By One *****************/
+
+
+.free-delivery {
+    width: 100%;
+    position: fixed;
+    z-index: 99;
+    background-color: var(--main-color);
+    padding: 8px;
+    text-align: center;
+    word-spacing: 5px;
+    color: white;
+    letter-spacing: 3px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.free-delivery h6 {
+    margin-left: 34%;
+    margin-top: 3px;
+}
+
+.free-delivery .icons a{
+    color: white;
+    margin-right: 10px;
+    font-size: 14px;
+}
+
+.free-delivery .icons a:hover{
+    color: var(--red-color);
+    font-size: 15px;
+}
+/* main */
+.main-head {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    position: fixed;
+    z-index: 99;
+    top: 37px;
+    background-color: white;
+}
+
+/***************** Left Section *****************/
+
+.left-section {
+    padding: 20px;
+    width: calc(100% / 3);
+    color: var(--main-color);
+}
+
+.left-section p {
+    padding-left: 160px;
+    font-size: 20px;
+    letter-spacing: 10px;
+    cursor: pointer;
+}
+
+/**************** Middle Section ****************/
+
+.middle-section {
+    width: calc(100% / 3);
+    
+}
+
+.middle-section ul{
+    display: flex;
+    justify-content: space-between;
+    padding: 23px 20px 20px 20px;
+
+}
+
+.middle-section ul li {
+    position: relative;
+}
+
+.middle-section ul li::after {
+    content: '';
+    height: 2px;
+    width:0;
+    background:var(--main-color);
+    position: absolute;
+    left: 0;
+    top: 20px;
+    transition: 0.5s;
+}
+
+.middle-section ul li:hover::after {
+    width: 100%;
+}
+
+.middle-section ul li a:hover , .middle-section ul li a.active {
+    color: var(--red-color);
+    font-weight: bold;
+
+}
+/***************** Right Section *****************/
+
+.right-section {
+    width: calc(100% / 3);
+    display: flex;
+    justify-content: end;
+    margin-top: 3px;
+}
+
+.right-section button {
+    padding: 20px 5px 20px 0px; 
+    border: none; 
+    font-size: 17px; 
+    background-color: white;
+    
+}
+
+.right-section button i {
+    color: var(--main-color);
+}
+
+.right-section .cart {
+    margin: 0px 10px;
+}
+
+
+.right-section .log button {
+    font-size: 23px; 
+    padding: 19px 0px 20px 0px;
+}
+
+.right-section label {
+    font-size: 14px;
+    cursor: pointer;
+}
+
+
+/* right sections underline hover */
+
+.right-section .fav, 
+.right-section .cart,
+.right-section .log {
+    position: relative;
+    margin-right: 30px;
+}
+
+.right-section .fav::after,
+.right-section .cart::after,
+.right-section .log::after {
+
+    content: '';
+    height: 2px;
+    width:0;
+    background:var(--main-color);
+    position: absolute;
+    left: 0;
+    bottom: 18px;
+    transition: 0.5s;
+}
+
+.right-section .fav:hover::after,
+.right-section .cart:hover::after,
+.right-section .log:hover::after {
+    width: 100%;
+}
+
+.right-section .fav:hover, 
+.right-section .cart:hover,
+.right-section .log i:hover {
+    color: var(--red-color);
+}
+
+
+/**************** Start Background image ****************/
+
+.bg {
+    margin-top: 102px;
+    background-image: url(../images/b1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 40vh;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.bg h3 {
+    font-size: 40px;
+}
+
+/***************** Start Enjoy Section *****************/
+
+.enjoy {
+    text-align: center;
+    padding: 0 30px 30px 30px;
+    display: flex;
+    justify-content: space-around;
+    text-shadow: 5px 5px 30px var(--red-color);
+    line-height: 30px;
+    width: 70%;
+    margin-top: 60px;
+}
+
+
+.enjoy .enjoy-text a {
+    color: red;
+
+}
+
+
+.enjoy input{
+    border: none;
+    outline: none;
+    border-bottom: 1px solid var(--main-color);
+    padding:  10px 50px 10px 30px;
+    overflow: visible;
+}
+
+.enjoy input::placeholder {
+    overflow: visible;
+}
+
+
+.enjoy i {
+    position: absolute;
+    color: var(--main-color);
+}
+
+/**************** Start Scroll ****************/
+
+
+
+.scroll {
+    margin-top: 100px;
+    margin-left: 48.5%;
+    margin-bottom: 20px;
+	width: 35px;
+	height: 35px;
+	border: 2px solid var(--red-color);
+	border-radius: 50%;
+	position: absolute;
+	animation: down 1.5s infinite;
+	-webkit-animation: down 1.5s infinite; }
+	.scroll::before {
+		content: '';
+		position: absolute;
+		top: 7px;
+		left: 10px;
+		width: 10px;
+		height: 10px;
+		border-left: 2px solid var(--red-color);
+        border-bottom: 2px solid var(--red-color);
+		transform: rotate(-45deg);
+	}
+
+@keyframes down {
+	0% {
+		transform: translate(0);
+	}
+	20% {
+		transform: translateY(10px);
+	}
+	40% {
+		transform: translate(0);
+	}
+}
+
+@-webkit-keyframes down {
+	0% {
+		transform: translate(0);
+	}
+	20% {
+		transform: translateY(10px);
+	}
+	40% {
+		transform: translate(0);
+	}
+}
+
+/**************** products items ****************/
+
+.products-all h4 {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    letter-spacing: 3px;
+    word-spacing: 2px;
+    color: rgba(0, 0, 0, 0.563);
+}
+
+.products {
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    text-align: center;
+    margin-right: 100px;
+    margin-left: 70px;
+}
+
+.products .product-item {
+    width: 222px;
+    margin-left: 30px;
+    position: relative;
+    margin-bottom: 60px;
+    border-radius: 2px;
+}
+.products .product-item img {
+    height: 280px;
+    width: 100%;
+    transition: all 1s ease-in-out;
+    cursor: pointer;
+}
+
+.products .product-item img:hover{
+    width: 120%;
+    margin-left: -10%;
+}
+
+.products .product-item .price-and-add {
+    display: flex;
+    justify-content: space-around;
+}
+
+.products .product-item .product-des p {
+    margin: 7px 0 10px 0;
+    text-align: center;
+    letter-spacing: 2px;
+    word-spacing: 3px;
+    font-size: 16px;
+}
+
+.products .product-item .price-and-add p {
+    margin: 20;
+    letter-spacing: 0px;
+    word-spacing: 0px;
+}
+
+.product-des {
+    text-align: center;
+    padding: 0 10px;
+}
+
+.products .product-item .price-and-add , .price-and-add a{
+    color: rgba(0, 0, 0, 0.562);
+    transition: all 0.2s ease-in-out;
+}
+
+.products .product-item .product-des a:hover {
+    color: var(--red-color);
+}
+
+
+.see-more-products {
+    padding: 13px 24px;
+    border-radius: 15px;
+    letter-spacing: 1px;
+    border: none;
+    background-color: var(--main-color);
+    color: white;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+}
+.see-more {
+    text-align: center;
+}
+
+.see-more .see-more-products:hover{
+    background-color: var(--red-color);
+    color: var(--main-color);
+    transform: scale(1.1, 1);
+    cursor: pointer;
+}
+
+
+/******* Start Heart *******/
+
+.heart {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+
+.heart a {
+    background-color: transparent;
+    border: none;
+    font-size: 25px;
+    color: var(--main-color);
+    cursor: pointer;
+}
+
+.heart a i:hover {
+    color: red;
+}
+
+
+/*************** Start Services ****************/
+
+.services {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+
+}
+
+.all-services h4 {
+    display: block;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    letter-spacing: 3px;
+    word-spacing: 2px;
+    color: rgba(0, 0, 0, 0.563);
+}
+
+.services h3{
+    color: rgba(0, 0, 0, 0.6);
+    padding: 10px 0 5px 0;
+}
+.services p {
+    color: rgba(0, 0, 0, 0.36); 
+}
+
+.services img {
+    width: 100px;
+    height: 50px;
+}
+
+
+/********** Start About Part ***********/
+.about {
+    text-align: center;
+    margin-top: 100px;
+    background-image: url(../images/Screen\ Shot\ 2022-02-13\ at\ 8.02.45\ AM.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 100px;
+
+}
+
+.about h4{
+    letter-spacing: 10px;
+    font-weight: bold;
+}
+.about p {
+    margin-top: 30px;
+    color: rgba(0, 0, 0, 0.524);
+}
+
+.about button{
+    background-color: transparent;
+    border: 1px solid rgba(0, 0, 0, 0.245);
+    padding: 8px 20px;
+    margin: 20px;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+    border-radius: 3px;
+}
+
+.about button:hover {
+    background-color: var(--main-color);
+    color: white;
+    padding: 8px 28px;
+}
+
+/* Start Newsletter Part */
+
+.newsletter {
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.077);
+    width: 500px;
+    height: 350px;
+    margin: 100px auto;
+    text-align: center;
+    border-radius: 15px;
+}
+
+.newsletter img{
+    width: 130px;
+    height: 90px;
+    padding-top: 30px;
+}
+.newsletter h3 {
+    padding: 10px;
+    color: var(--main-color);
+}
+
+.newsletter p {
+    color: rgba(0, 0, 0, 0.332);
+}
+
+.form-control {
+    position: relative;
+    margin: 30px 0 20px 0;
+}
+
+.form-control .input {
+    width: 90%;
+    border: 0;
+    margin-bottom: 20px;
+    border-radius: 50px;
+    height: 42px;
+    font-size: 14px;
+    font-family: inherit;
+    padding: 12px 15px;
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.138);
+    letter-spacing: 1.5px;
+    word-spacing: 1px;
+}
+
+
+.form-control .btn{
+    background-color: var(--main-color);
+    border: 0;
+    border-radius: 50px;
+    color: white;
+    height: 42px;
+    font-family: inherit;
+    font-size: 12px;
+    padding: 12px 25px;
+    cursor: pointer;
+    letter-spacing: 2px;
+    transition: all 0.3s ease-in-out;
+}
+
+.form-control .btn:focus , .form-control .input:focus{
+    outline: 0;
+}
+
+.form-control button:hover{
+    background-color: var(--red-color);
+    color: var(--main-color);
+    transform: scale(1.1 , 1);
+}
+
+/********** Start Form ***********/
+
+.form{
+    text-align: center;
+    margin: 70px 10%;
+}
+
+.form form input{
+    border: 0;
+    width: 40%;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    margin-top: 10px;
+    border-radius: 10px;
+    height: 42px;
+    font-size: 14px;
+    font-family: inherit;
+    padding: 15px 15px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.158);
+    letter-spacing: 1.5px;
+    word-spacing: 1px;
+}
+.form form input:focus{
+    outline: none;
+}
+.form span {
+    color: var(--red-color);
+}
+.form h3 {
+    color: var(--main-color);
+    font-weight: bold;
+    font-size: 23px;
+}
+.form p {
+    color: rgba(0, 0, 0, 0.462);
+    margin-top: 10px;
+}
+.form form {
+    margin-top: 50px;
+}
+.form form #message {
+    padding: 50px 170px 220px 30px;
+}
+.form-button{
+    text-align: center;
+}
+
+#form-btn{
+
+    background-color: var(--main-color);
+    border: 0;
+    border-radius: 50px;
+    color: white;
+    height: 42px;
+    font-family: inherit;
+    font-size: 13px;
+    padding: 12px 50px;
+    cursor: pointer;
+    letter-spacing: 2px;
+    transition: all 0.3s ease-in-out;
+    text-align: center;
+    margin: 15px;
+}
+
+#form-btn:hover {
+    transform: scale(1.1, 1);
+    cursor: pointer;
+    background-color: var(--red-color);
+    color: var(--main-color);
+}
+/* Start Footer */
+
+footer {
+    background-color: var(--main-color);
+    color: white;
+    padding: 80px 0 50px 0;
+}
+
+.footer-lists {
+    display: flex;
+    justify-content: space-around;
+
+}
+.footer-lists h5 {
+    margin-bottom: 20px;
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+.footer-lists li {
+    font-size: 15px;
+    margin-bottom: 10px;
+    color: rgba(255, 255, 255, 0.514);
+}
+.footer-lists li:hover{
+    color: var(--red-color);
+}
+
+/* start final */
+
+.final {
+    text-align: center;
+    margin-top: 40px;
+    letter-spacing: 2px;
+}
+
+.final p {
+    margin-top: 15px;
+    color: rgba(255, 255, 255, 0.514);
+    letter-spacing: 2px;
+    font-size: 14px;
+    line-height: 25px;
+}
+
+.final .icons a{
+    color: white;
+    margin-right: 10px;
+    font-size: 17px;
+
+}
+.final .icons {
+    margin-top: 30px;
+}
+
+.final .icons a:hover{
+    color: var(--red-color);
+    font-size: 15px;
+}
